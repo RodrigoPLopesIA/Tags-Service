@@ -6,5 +6,5 @@ import com.rodrigolopesai.tags_service.entities.Tag;
 
 
 public interface TagRepository extends MongoRepository<Tag, String>{
-    
+    Boolean existsByNameIgnoreCase(String name);
 }
