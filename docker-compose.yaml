@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  tags-service:
+      container_name: tags-service
+      image: tags-service
+      ports:
+        - 8000:8000
+      networks:
+      - microservices-net
+
+networks:
+  microservices-net:
+    external: true
