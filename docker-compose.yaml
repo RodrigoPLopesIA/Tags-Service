@@ -5,7 +5,7 @@ services:
       container_name: tags-service
       image: tags-service
       ports:
-        - 8000:8000
+        - 8082:8082
       networks:
       - microservices-net
 
